@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = ['ㄱ', 'ㄴ', 'ㄷ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅅ', 'ㅇ', 'ㅈ', 'ㅊ',
+            'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ', 'ㅏ', 'ㅑ', 'ㅓ', 'ㅕ', 'ㅗ', 'ㅛ', 'ㅜ',
+            'ㅠ', 'ㅡ', 'ㅣ'
+        ];
+
+        var str = prompt('알파벳 입력', '');
+        var result = "";
+
+        for (var i = 0; i < str.length; i++) {
+            result += arr[(str.charAt(i)).charCodeAt(0) - "a".charCodeAt(0)];
+        }
+        alert(result);
+        //alert(arr[str.charAt(i).charCodeAt(0) - "a".charCodeAt(0)]);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

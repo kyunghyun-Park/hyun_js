@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var score = Number(prompt('학점은?', ''));
+        //4.0이상 4.5미만 학생 출력
+        if (4.0 <= score && score < 4.5) {
+            alert("굿")
+        } else {
+            alert(score);
+        }
+
+        //switch
+        var key = Number(prompt('숫자 ', '0'));
+
+        switch (key % 2) {
+            case 0:
+                alert('짝');
+                break;
+            case 1:
+                alert('홀');
+                break;
+        }
+        
+        var input=prompt('숫자입력해라~~','캬캬캬캬');
+        alert(typeof input);
+        var number = Number(input);
+        alert(typeof number);
+
+        //짧은 조건문
+        true && alert('실행되니?');
+        false && alert('실행되냐구');
+
+        var output = "안녕하세요".indexOf("하세요");
+        alert(output);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
