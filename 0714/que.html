@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function power(a, b) {
+            var length = arguments.length;
+
+            if (length == 1) {
+                return Math.pow(a, 2);
+            } else if (length == 2) {
+                return Math.pow(a, b);
+            }
+        }
+
+        function multiply() {
+            value = 1;
+            for (var i = 0; i < arguments.length; i++) {
+                value = value * arguments[i];
+            }
+            return value;
+        }
+        alert(power(2, 3));
+        alert(multiply(1, 2, 3, 4, 5));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

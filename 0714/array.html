@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         var students= [];
+
+       /* students.push({이름: '박경현',국어:91,수학:92,영어:100,과학:90});
+        students.push({이름: '박경이',국어:92,수학:92,영어:100,과학:90});
+        students.push({이름: '박경삼',국어:93,수학:92,영어:100,과학:90});
+        students.push({이름: '박경사',국어:94,수학:92,영어:100,과학:90});
+        students.push({이름: '박경오',국어:95,수학:92,영어:100,과학:90});
+        students.push({이름: '박경육',국어:96,수학:92,영어:100,과학:90});
+        students.push({이름: '박경칠',국어:97,수학:92,영어:100,과학:90});
+        students.push({이름: '박경팔',국어:98,수학:92,영어:100,과학:90});
+        */
+        function makeStudent(name, korean, math, english) {
+            var willReturn = {
+                이름: name,
+                국어: korean,
+                수학: math,
+                영어: english,
+
+                getSum: function () {
+                    return this.국어 + this.수학 + this.영어;
+                },
+                getAverage: function () {
+                    return this.국어 + this.수학 + this.영어;
+                },
+                toString: function() {
+                    return this.이름 + ' '+ this.getSum() + ' '+this.getAverage();
+                }
+            }
+            return willReturn;
+        }
+   
+      students.push(makeStudent('박경현',100,100,100));
+      students.push(makeStudent('홍동국',92,100,100));
+
+
+        var output = "이름 총점 평균\n";
+        for (var i in students) {
+            output += students[i].toString() + '\n';
+        }
+        alert(output);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

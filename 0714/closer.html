@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function test(name) {
+            var output = 'Hello ' + name + ' ..!';
+            return function () {
+                alert(output);
+            }
+        }
+
+        test('JavaScript')();
+        var test_1 = test('ㅋㅋ');
+        var test_2 = test('ㅎㅎ');
+
+        test_1();
+        test_2();
+
+        setTimeout(function () {
+            alert('3초가 지났습니다 ㅇㅅㅇ');
+        }, 3000);
+
+        //1초마다 함수를 실행합니다.
+        var interverID = setInterval(function () {
+            alert('<p>' + new Data() + '<p>');
+        }, 1000);
+
+        //10초 후 함수를 실행합니다.
+        setTimeout(function () {
+            //타이머 종료
+            clearInterval(interverID);
+        }, 10000);
+
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

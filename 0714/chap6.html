@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var product = {
+            제품명: '망고',
+            유형: '과일',
+            price: 10000
+        }
+        alert(product);
+        alert(product.price);
+        alert(product['제품명']);
+
+        var obj = {
+            number: 273,
+            string: 'aaaaa',
+            boolean: true,
+            array: [22, 1, 2, 3, 3],
+            method: function () {
+                alert('함수호출임');
+            }
+        };
+
+        obj.method();
+        var output = '';
+        for (var i in product) {
+            output += '*' + i + ':' + product[i] + '\n';
+        }
+        alert(output);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
